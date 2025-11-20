@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* especificaciones de toda la página */
+body{
+    margin: 0; /* mangen de la caja*/
+    font-family: "Ubuntu", sans-serif; /* Tipo de letra*/
+}
+.navbar {
+    background-color: #3b3b39; /* color de fondo*/
+    /* Aplicar flex y alineación*/
+    display: flex;
+    justify-content: space-between; /*espacio entre los items*/
+    align-items: center; /* centrar verticalmente*/
+    height: 90px; /* alto de barra*/
+    
+}
+.titulo{
+    color: #f5f3ef; /*color de titulo*/
+    padding-left: 70px; /*distancia de izquierda*/
+    font-size: 30px; /*tamaño de títtulo*/
+}
+.nav-links {
+    list-style-type: none; /* le quita el estilo */
+    display: flex; /*aplico flex a los items */
+    margin-left: 600px; /*links ajustados a la derecha*/
+}
+.nav-links li {
+    margin-right: 20px; /*espacio entre links*/
+}
+.nav-links li a {
+    text-decoration: none;/* Sacar la linea de abajo*/
+    color:white; /* Color letra*/
+    font-weight: bold; /* Tipo de letra*/
+    font-size: 20px; /* Tamaño de fuente*/
+}
+/* Efecto de boton con sombra al momento de apretar link*/
+.nav-links li a:hover {
+    background-color: rgb(14, 60, 95); /* color de botón*/
+    padding: 10px; /* tamaño de botón*/
+    font-size: 20px; /* tamaño de letra*/
+    border-radius: 8px; /* borde redondo*/
+    box-shadow: 5px 5px 15px #dddfd6; /* sombra*/
+} 
+.boton1{
+    /* tamaño de botón */
+    width: 120px;
+    height: 40px;
+    background-color: #1c1553; /* color de botón */
+    color: rgb(237, 234, 234); /*Color de fuente*/
+    font-weight: bold; /* Estlo de fuente*/
+    border-radius: 60px; /*Estilo de borde redondo*/
+    border: 1px solid white; /*Estilo de borde*/
+    margin-right: 80px; /* posición de boton */
+    cursor: pointer; /* cambia cursor al presionar botón */
+}
+.boton1:hover{
+    background-color:rgb(14, 60, 95); /* efecto para botón */
+}
+main{
+    margin: 10px; /*Margen de tarjetas*/
+    display: flex; /*aplicar Flex*/
+    justify-content: center; /*centrar tarjetas*/
+    gap: calc(80px); /*espacuis entre tarjetas*/
+}
+.perfil{
+    /* tamaño de la tarjeta (alto y ancho) */
+    width: 780px;  
+    height: 360px;
+    border-radius: 10px; /*borde redondo*/
+    box-shadow: 10px 10px 50px grey; /*sombra de tarjetas*/
+}
+.barra{
+    height: 35%; /* altura de la primera sección barra de color más imagen */
+}
+.perfil div{
+    /* color de barra de color */
+    background-image: linear-gradient(to right, #484845, #9da19d); 
+    /* tamaño de barra de color */
+    height: 100px;
+    width: 100%;
+}
+.perfil img{
+    /* tamaño de imagen */
+    width: 170px;
+    height: 170px;
+    /* borde para hacerlo circular */
+    border-radius: 50%;
+    /* posición de la imagen */
+    position: relative;
+    top: -70px;
+    left: 70%;
+    border: 5px solid white; /*borde de la imagen*/
+}
+.texto{
+    /* flex para ordenar el texto */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* caudrar texto */
+    padding: 0px 30px;
+}
+.texto h1{
+    font-size: 30px; /*Tamaño de texto*/
+}
+
+.education{
+    /* tamaño de la tarjeta (alto y ancho) */
+    width:780px;  
+    height: 180px;
+    /* borde */
+    border-radius: 10px; /*borde redondo*/
+    box-shadow: 10px 10px 50px grey; /*sombra*/
+    /* centrar tarjeta */
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: calc(10px);
+    padding: 30px;
+}
+.solicitud{
+    /* tamaño de la tarjeta (alto y ancho) */
+    width: 530px;  
+    height: 157px;
+    /* borde */
+    border-radius: 10px; /*borde redondo*/
+    box-shadow: 10px 10px 50px grey; /*sombra*/
+    /* centrar tarjeta */
+    margin: 1px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-size: 18px; /*tamaño de letra*/
+    font-weight: bold; /*estilo de letra*/
+}
+.solicitud h2{
+    /*posición de titulo*/
+    margin: 10px 30px;
+}
+.tarjeta{
+    display: flex;
+    align-items: center;
+    gap: calc(50px);
+    margin: 5px 30px;
+}
+.tarjeta img{
+    border-radius: 50%;
+    width: 40px;  
+    height: 40px;
+    border: 1px solid black;
+    margin-right: 20px;
+}
+.boton2{
+    /* tamaño de botón */
+    width: 30px;
+    height: 30px;
+    /* color del botón */
+    background-color: #15773c;
+    /* color, tipo de letra */
+    color: rgb(244, 240, 240);
+    font-weight: bold;
+    box-shadow: 5px 5px 15px #91928c;
+    /* borde redondo */
+    border-radius: 50%;
+}
+.boton3{
+    /* tamaño de botón */
+    width: 30px;
+    height: 30px;
+    /* color del botón */
+    background-color: #ad2424;
+    /* color, tipo de letra */
+    color: rgb(244, 240, 240);
+    font-weight: bold;
+    box-shadow: 5px 5px 15px #91928c;
+    /* borde redondo */
+    border-radius: 50%;
+}
+.boton2:hover{
+    /* efecto para botón */
+    background-color: rgb(14, 60, 95);
+    color: white;
+    cursor: pointer;
+}
+.boton3:hover{
+    /* efecto para botón */
+    background-color: rgb(14, 60, 95);
+    color: white;
+    cursor: pointer;
+}
+.conecciones{
+    /* tamaño de la tarjeta (alto y ancho) */
+    width: 530px;  
+    height: 380px;
+    /* borde */
+    border: 2px solid rgb(241, 235, 235);
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px grey;
+    /* centrar tarjeta */
+    margin: 20px auto;
+    background-color: white;
+    font-style: bold;
+    font-size: 18px;
+}
+.conecciones h2{
+    /*ubicación titulo*/
+    margin: 25px 30px;
+}
+.conecciones div{
+    /*aplicar Flex y aliniar items*/
+    display: flex;
+    align-items: center;
+    gap: calc(40px);
+    margin: 5px 30px;
+}
+.conecciones img{
+    border-radius: 50%; /*borde a imagenes*/
+    /*tamaño de imagen*/
+    width: 40px;  
+    height: 40px;
+    border: 1px solid black;/*borde de imagen*/
+    margin-right: 30px;/*separación con nombre*/
+}
